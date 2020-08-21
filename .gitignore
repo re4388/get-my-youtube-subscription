@@ -1,0 +1,5 @@
+/node_modules
+.env
+/bk
+youtube_sub.csv
+youtube_sub.json
