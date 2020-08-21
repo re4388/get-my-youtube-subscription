@@ -40,7 +40,7 @@ axios({
   })
 
   if (outputMode === 'csv') {
-    /* save to youtube_sub.json */
+    /* save to csv */
     let csv = new ObjectsToCsv(csvData);
     if (pageToken === `page1`) {
       await csv.toDisk('./youtube_sub.csv');
@@ -50,7 +50,7 @@ axios({
       });
     }
   } else {
-    /* save to YTSub.csv */
+    /* save to json */
     if (pageToken === `page1`) {
       let obj = {
         data: csvData
